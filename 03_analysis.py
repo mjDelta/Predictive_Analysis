@@ -16,7 +16,10 @@ rocks_mines=pd.read_csv(target_url,header=None,prefix="V")
 
 dataColumn2=rocks_mines.iloc[:,1]
 dataColumn3=rocks_mines.iloc[:,2]
-
+"""
+若散点图沿着一条直线排列，则说明两个属性强相关；
+若形成球型，则说明不相关。
+"""
 plot.scatter(dataColumn2,dataColumn3)
 plot.xlabel("Attribute 2")
 plot.ylabel("Attribute 3")
