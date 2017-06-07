@@ -17,7 +17,7 @@ rocks_mines=pd.read_csv(target_url,header=None,prefix="V")
 """
 dataframe中定位到元素用：iat
 """
-for i in range(200):
+for i in range(208):
   #根据标签指定两种不同的颜色
 
   if rocks_mines.iat[i,60]=="M":
