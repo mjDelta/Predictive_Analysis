@@ -9,7 +9,7 @@ import matplotlib.pyplot as plot
 
 target_url="http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
 
-wine=pd.read_csv(target_url,header=0,seq=";")
+wine=pd.read_csv(target_url,header=0,sep=";")
 
 summary=wine.describe()
 
