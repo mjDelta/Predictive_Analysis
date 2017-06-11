@@ -11,7 +11,7 @@ from math import exp
 
 target_url="http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
 
-wine=pd.read_csv(target_url,header=0,seq=";")
+wine=pd.read_csv(target_url,header=0,sep=";")
 summary=wine.describe()
 
 nrow=len(wine.index)
@@ -35,10 +35,10 @@ wineNormalized=wine
 for i in range(ncol):
   mean=summary.iloc[1,i]
   std=summary.iloc[2,i]
-  wineNormalized.iloc[:,i:i+1]=(wineNormalized.iloc[:,i:i+1]-mean/std)
+  wineNormalized.iloc[:,i:i+1]=(wineNormalized.iloc[:,i:i+1]-mean)/std
 for i in range(nrow):
   dataRow=wineNormalized.iloc[i,:ncol-1]
-  target=(wineNormalized.iloc[i,ncol-1]-meanTaste)/stdTaste
+  target=wineNormalized.iloc[i,ncol-1]
   labelColor=1.0/(1.0+exp(target))
   dataRow.plot(color=plot.cm.RdYlBu(labelColor),alpha=0.5)
 plot.xlabel("Attribute Index")
