@@ -1,6 +1,6 @@
 # Predictive_Analysis
 《Python机器学习预测分析核心算法》的实现记录</br>
-分析部分：</br>
+<font color=red size=4>分析部分：</font></br>
 1.分位数图（QQ图）检测异常点（与正态分布对比的QQ图）</br>
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/QQPlot.png)</br>
 2.盒状图检测异常点（多分类问题异常点的检测不同于二分类问题）</br>
