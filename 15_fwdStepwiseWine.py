@@ -104,5 +104,13 @@ errorVector=yTest-model.predict(xTest)
 plt.hist(errorVector)
 plt.xlabel("Bin Boundaries")
 plt.ylabel("Counts")
+plt.title("Histogram")
+plt.show()
+
+#画散点图
+plt.scatter(model.predict(xTest),yTest,s=100,alpha=0.2)
+plt.xlabel("Predictive Score")
+plt.ylabel("Actual Score")
+plt.title("Predictive v.s. Actual")
 plt.show()
 
