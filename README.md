@@ -15,3 +15,10 @@
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/auc_insample.png)
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/auc_outsample.png)</br>
 
+过拟合问题的处理：</br>
+1.使用逐步向前回归控制过拟合（示例：红酒打分回归问题）</br>
+逐步回归中rms误差随属性增加的变化曲线</br>
+![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/fwdstep.png)</br>
+红酒打分问题的效果图</br>
+![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/fwdstepscatter.png)
+![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/fwdstephist.png)</br
