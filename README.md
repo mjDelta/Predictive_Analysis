@@ -10,3 +10,8 @@
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/parallePlot.png)
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/heatPlot.png)</br>
 
+模型评估部分：</br>
+1.ROC&AUC曲线:展示了样本内ROC曲线，样本外的ROC曲线（可以看出样本内的AUC值更大，但是实际预测中往往使用样本外的AUC衡量）</br>
+![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/auc_insample.png)
+![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/auc_outsample.png)</br>
+
