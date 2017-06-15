@@ -23,5 +23,11 @@
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/fwdstepscatter.png)
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/fwdstephist.png)</br>
 2.使用岭回归控制过拟合（示例：红酒打分回归问题），正则化</br>
-逐步回归中rms误差随属性增加的变化曲线</br>
+岭回归中rms误差随alpha正则化系数的变化曲线</br>
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/ridge.png)</br>
+2.使用岭回归控制过拟合（示例：水雷岩石分类问题），正则化</br>
+岭回归用于分类时auc值随alpha正则化系数的变化曲线</br>
+岭回归处理回归问题和分类问题是有差别的：</br>
+回归问题使用RMSError作为模型评估标准，选择rms值最小的alpha作为正则化系数</br>
+分类问题使用ROC-AUC曲线作为模型评估标准，选择auc值最大的alpha作为正则化系数</br>
+![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/ridgeclassify.png)</br>
