@@ -31,3 +31,5 @@
 回归问题使用RMSError作为模型评估标准，选择rms值最小的alpha作为正则化系数</br>
 分类问题使用ROC-AUC曲线作为模型评估标准，选择auc值最大的alpha作为正则化系数</br>
 ![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/ridgeclassify.png)</br>
+3.使用LARS控制过拟合（示例：红酒打分问题）</br>
+![image](https://github.com/mjDelta/Predictive_Analysis/blob/master/imgs/lars.png)</br>
